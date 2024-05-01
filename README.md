@@ -1,11 +1,11 @@
 # ChessPersona
-# ChessPersona
 
 ![ChessPersona Logo](images/logo.png)
 
-## Cover Image
-![ChessPersona Cover](images/cover.png)
-
+<div style="background-image:url('images/cover.png'); color: white; text-align: center; padding: 50px;">
+    <h1>Welcome to ChessPersona</h1>
+    <p>Discover the art of chess play styles through advanced analysis.</p>
+</div>
 
 ## Overview
 ChessPersona is a sophisticated tool designed to analyze chess games and identify the distinctive playing styles of chess players. By dissecting and examining various aspects of game play, ChessPersona offers insights into a player’s tactical and strategic preferences.
