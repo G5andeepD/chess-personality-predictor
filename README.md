@@ -5,18 +5,29 @@
 ## Welcome to ChessPersona
 Discover the art of chess play styles through advanced analysis.
 ![ChessPersona Cover](images/cover.png)
+# ChessPersona
+
+Discover the art of chess play styles through advanced analysis.
+
+## Welcome to ChessPersona
+
+ChessPersona is a sophisticated tool designed to analyze chess games and identify the distinctive playing styles of chess players. By dissecting and examining various aspects of gameplay, ChessPersona offers insights into a player’s tactical and strategic preferences.
 
 ## Overview
-ChessPersona is a sophisticated tool designed to analyze chess games and identify the distinctive playing styles of chess players. By dissecting and examining various aspects of game play, ChessPersona offers insights into a player’s tactical and strategic preferences.
+
+ChessPersona leverages unsupervised learning techniques to group chess games by similar play styles. This approach helps uncover distinct patterns and strategies used by different players, providing a deeper understanding of chess dynamics without the need for predefined labels.
 
 ## Why ChessPersona?
-In the world of chess, understanding a player's style is crucial for both training and competition. Coaches can tailor their training methods to suit the player’s natural inclinations, while players can gain insights into their strengths and weaknesses. Furthermore, enthusiasts and professional analysts can use these insights for commentary, game preparation, and in-depth player study.
+
+In the world of chess, recognizing and understanding various playing styles is crucial for training, competition, and commentary. Coaches can better understand the natural play styles of players and tailor training accordingly. Players gain insights into their own strengths and weaknesses, while analysts and enthusiasts can deepen their understanding of strategic approaches across different levels of play.
 
 ## What It Does
-ChessPersona parses chess games provided in PGN format, extracts key gameplay features, and classifies players into distinct style categories. This classification helps in understanding how different players approach the game under various circumstances.
+
+ChessPersona parses chess games provided in PGN format, extracts key gameplay features, and clusters games into distinct style categories using advanced clustering algorithms. This helps identify common strategies and tactics among groups of players, enhancing our understanding of chess play dynamics.
 
 ## Feature Extraction
-ChessPersona currently plans to extract the following features for each game:
+
+ChessPersona plans to extract the following features for each game, which are instrumental for the clustering process:
 
 - **Center Control Score**: Measures control over key central squares.
 - **Piece Activity Score**: Assesses the mobility and activity of pieces throughout the game.
@@ -25,11 +36,14 @@ ChessPersona currently plans to extract the following features for each game:
 - **Captures Score**: Tracks the number of captures made by a player, indicating tactical sharpness.
 - **Pawn Structure Stability Score**: Analyzes the stability and weakness in the pawn structure.
 
-## Model Possibilities
-The features extracted from the gameplay are used to feed various machine learning models. We have several options for modeling:
+## Modeling Approaches
 
-- **Supervised Learning Models**: Such as SVM, Random Forest, and Gradient Boosting Machines for classifying players into style categories.
-- **Neural Networks**: Including CNNs and RNNs for more complex feature interactions and deep learning-based style prediction.
-- **Ensemble Techniques**: Combining multiple models to improve prediction accuracy and robustness.
+The extracted features are used to feed various unsupervised machine learning models to identify distinct clusters of playing styles:
+
+- **K-means Clustering**: A popular clustering method that groups data based on feature similarity.
+- **Hierarchical Clustering**: This technique builds a tree of clusters and is particularly useful for understanding the nested relationships between different playing styles.
+- **DBSCAN**: Useful for identifying clusters of arbitrary shape and for handling noise and outliers in the dataset.
+
+By employing these models, ChessPersona aims to reveal nuanced insights into the diverse strategies employed by chess players around the world.
 
 
