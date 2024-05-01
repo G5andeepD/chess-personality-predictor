@@ -1,6 +1,6 @@
-# ChessPersona
-
-![ChessPersona Logo](images/logo.png)
+<h1>
+  <img src="images/logo.png" alt="ChessPersona Logo" width="50" style="vertical-align:middle"> ChessPersona
+</h1>
 
 ## Welcome to ChessPersona
 Discover the art of chess play styles through advanced analysis.
